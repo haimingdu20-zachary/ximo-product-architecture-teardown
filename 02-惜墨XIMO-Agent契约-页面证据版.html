@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>惜墨 XIMO｜Agent 契约·页面证据版</title>
+<style>
+:root{--ink:#162139;--paper:#f4f0e7;--card:#fffdf8;--line:#d7d0c2;--gold:#ac7c32;--blue:#31589b;--green:#176952;--purple:#6e4e85}*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font:15px/1.62 system-ui,-apple-system,"PingFang SC",sans-serif;overflow-x:auto}header,main,footer{max-width:1380px;margin:auto;padding:26px}.hero{background:#162139;color:white;border-bottom:5px solid var(--gold)}h1{font:700 clamp(30px,5vw,60px)/1.1 Georgia,"Songti SC",serif}.nav{display:flex;flex-wrap:wrap;gap:8px}.nav a{color:inherit;text-decoration:none;border:1px solid #c9ad75;border-radius:99px;padding:6px 10px}.grid{display:grid;grid-template-columns:repeat(12,1fr);gap:16px}.card{grid-column:span 4;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px}.half{grid-column:span 6}.wide{grid-column:1/-1}.label{font-weight:700}.ok{color:var(--green)}.infer{color:var(--blue)}.design{color:#8b4b18}.unknown{color:#6b6471}.id{font:12px ui-monospace,monospace;color:#6c5227}table{width:100%;border-collapse:collapse;background:var(--card)}th,td{border:1px solid var(--line);padding:10px;vertical-align:top}th{background:#e7e1d6;text-align:left}.contract{border-top:7px solid var(--gold)}.io{display:grid;grid-template-columns:1fr 70px 1fr;gap:12px;align-items:stretch}.io>div{background:#eef1f6;border-radius:12px;padding:14px}.io .arrow{display:grid;place-items:center;background:none;font-size:32px;color:var(--gold)}pre{white-space:pre-wrap;background:#111a2c;color:#e9edf7;border-radius:12px;padding:16px;overflow:auto}.pill{display:inline-block;border:1px solid var(--line);border-radius:99px;padding:3px 8px;margin:2px}.risk{border-left:5px solid #a5473d}img{max-width:100%;border:1px solid var(--line);border-radius:10px}@media(max-width:850px){.card,.half{grid-column:1/-1}.io{grid-template-columns:1fr}.io .arrow{transform:rotate(90deg)}header,main,footer{padding:18px}}@media print{body{background:white;font-size:10px}.hero{background:white;color:#000}.nav{display:none}.card,table{break-inside:avoid}.io{grid-template-columns:1fr 50px 1fr}a{color:#000;text-decoration:none}}
+</style></head><body>
+<header class="hero"><p>STAGE 2 · OBSERVABLE AGENT CONTRACTS</p><h1>一个已确认 Agent，若干系统职能</h1><p>惜墨 XIMO 网站版 · Agent 契约页面证据版 · 2026-08-19 复核</p><nav class="nav"><a href="01-惜墨XIMO-用户旅程-页面取证版.html">01 用户旅程</a><a href="#roster">名录</a><a href="#contract">小语契约</a><a href="#states">状态</a><a href="#omissions">边界</a><a href="03-惜墨XIMO-温情记者小语-功能等价SystemPrompt.html">03 Prompt</a><a href="04-惜墨XIMO-产品全景架构-证据分层版.html">04 全景</a><a href="05-惜墨XIMO-架构分层图.html">05 分层图</a></nav></header>
+<main>
+<section class="grid" id="roster">
+<article class="card wide"><h2>Agent 名录判定</h2><p><span class="ok label">【已确认】</span> 本次公开界面中只有“温情记者·小语”以具有角色名、对话状态、问题引导、输入与执行入口的形式出现，因此只把它登记为显式 Agent。<span class="id">E-A-001</span></p></article>
+<article class="card"><h3>温情记者·小语</h3><p><span class="ok">【已确认】</span> 在线体验的访谈/整理 Agent。</p><p><span class="pill">状态：在听</span><span class="pill">输入：语音/文字</span><span class="pill">动作：帮我整理成文</span></p></article>
+<article class="card"><h3>AI 织书</h3><p><span class="infer">【合理推断】</span> 是产品能力或工作流职能；公开页面没有独立 Agent 身份、可对话入口或 Agent 级输出卡片，因此不登记为已确认 Agent。</p></article>
+<article class="card"><h3>人工总编 / 专属顾问</h3><p><span class="ok">【已确认】</span> 是页面描述的人类服务角色。<span class="unknown">【未知】</span> 是否由内部 Agent 辅助、如何协同均无证据。</p></article>
+</section>
+
+<section id="contract" class="grid">
+<article class="card wide contract"><h2>AgentContract · 温情记者·小语</h2>
+<div class="io"><div><h3>输入 Inputs</h3><ul><li><span class="ok">【已确认】</span> 推荐问题选择（3 个可见问题）。</li><li><span class="ok">【已确认】</span> 文本输入；页面自带示例可填入。</li><li><span class="ok">【已确认】</span> 语音按钮存在。</li><li><span class="unknown">【未知】</span> 麦克风权限后的实时转写、时长、格式、断点续传。</li><li><span class="unknown">【未知】</span> 登录态用户画像、历史章节和长期记忆是否注入。</li></ul></div><div class="arrow">→</div><div><h3>输出 Outputs</h3><ul><li><span class="infer">【合理推断】</span> “帮我整理成文”意图输出一段结构化回忆文字。</li><li><span class="unknown">【未知】</span> 生成结果的实际字段、长度、流式状态与错误信息。</li><li><span class="unknown">【未知】</span> 三色来源是否在体验结果中逐句呈现。</li><li><span class="unknown">【未知】</span> 输出是否自动保存、能否导出或进入正式项目。</li></ul></div></div>
+</article>
+
+<article class="card half"><h3>目标 Goal</h3><p><span class="infer">【合理推断】</span> 用记者式追问降低长辈叙述压力，将零散口述整理为可读、忠于来源的回忆片段，并为后续成章提供素材。</p><p class="id">E-A-003</p></article>
+<article class="card half"><h3>触发 Trigger</h3><p><span class="ok">【已确认】</span> 进入在线体验并点击“开始试讲”；用户选择问题或输入内容；“帮我整理成文”在有内容时启用。</p><p class="id">E-A-002</p></article>
+
+<article class="card"><h3>工具契约：采集口述输入</h3><p><span class="ok">【已确认】</span> `<采集口述输入>` 暴露文本框、语音按钮和示例填入。</p><p><strong>输入</strong>：question_id?、text?、audio?。<br><strong>输出</strong>：raw_narration（建议统一结构）。<br><strong>失败</strong>：空输入、权限拒绝、录音/网络错误。</p></article>
+<article class="card"><h3>工具契约：整理成文</h3><p><span class="ok">【已确认】</span> `<整理成文>` 按钮可见且在示例填入后启用；<span class="unknown">【未知】</span> 本次没有执行。</p><p><strong>建议输入</strong>：raw_narration、question、tone、source_policy。<br><strong>建议输出</strong>：draft、source_spans、warnings。</p></article>
+<article class="card"><h3>安全契约：不杜撰</h3><p><span class="ok">【已确认】</span> 页面声明绿=原话、蓝=润色、琥珀=可溯源背景；缺乏来源的私人经历会被门禁拦截，并由人工与用户确认。</p><p class="id">E-A-004 / E-R-007</p></article>
+
+<article class="card wide"><h3>建议的最小机器契约</h3><pre>{
+  "agent": "warm_reporter_xiaoyu",
+  "input": {
+    "question_id": "string|null",
+    "raw_text": "string|null",
+    "audio_ref": "asset-id|null",
+    "locale": "zh-CN",
+    "project_context": "unknown-in-as-is"
+  },
+  "output": {
+    "draft": "string",
+    "segments": [{"text":"string","source_type":"original|polish|background","source_ref":"string|null"}],
+    "follow_up_question": "string|null",
+    "warnings": ["unsupported_private_fact|consent_risk|low_confidence"]
+  },
+  "invariants": ["不创建未经讲述者支持的私人事实", "背景补充必须可溯源", "进入印刷前必须人工与用户确认"]
+}</pre><p><span class="design">【建议设计】</span> 这是功能等价重建的规范，不是从惜墨后台导出的真实 API。</p></article>
+</section>
+
+<section id="states" class="grid">
+<article class="card wide"><h2>可观察状态与建议状态机</h2>
+<table><thead><tr><th>状态</th><th>证据级别</th><th>进入条件</th><th>允许动作</th><th>退出 / 失败</th></tr></thead><tbody>
+<tr><td>experience_entry</td><td><span class="ok">【已确认】</span></td><td>进入体验页</td><td>开始试讲、返回</td><td>进入 listening</td></tr>
+<tr><td>listening</td><td><span class="ok">【已确认】</span></td><td>点击开始试讲</td><td>选择问题、文本、语音、填示例</td><td>有内容后进入 ready</td></tr>
+<tr><td>ready_to_compose</td><td><span class="ok">【已确认】</span></td><td>文本框非空</td><td>帮我整理成文</td><td>本次未执行</td></tr>
+<tr><td>composing</td><td><span class="design">【建议设计】</span></td><td>提交有效输入</td><td>取消、查看进度</td><td>成功→review；失败→recoverable_error</td></tr>
+<tr><td>review</td><td><span class="design">【建议设计】</span></td><td>返回 draft+segments</td><td>查看来源、修改、追问、加入项目</td><td>保存或继续讲</td></tr>
+<tr><td>recoverable_error</td><td><span class="design">【建议设计】</span></td><td>权限/网络/生成失败</td><td>重试、切换文字、保存草稿</td><td>回到 listening/ready</td></tr>
+</tbody></table></article>
+</section>
+
+<section id="omissions" class="grid">
+<article class="card half risk"><h2>不可越界的未知项</h2><ul><li>模型名称、参数、Prompt、上下文窗口。</li><li>生成是否采用检索、如何验证背景来源。</li><li>真实工具 API、超时、重试、幂等与审计。</li><li>是否存在调度 Agent、编辑 Agent、排版 Agent。</li><li>登录后上下文、长期记忆、家庭协作者权限。</li></ul></article>
+<article class="card half"><h2>后续验证用例</h2><ol><li>同一事实多次表述，验证来源合并与冲突处理。</li><li>诱导加入虚构经历，验证拒绝与追问。</li><li>提供公开时代事件，验证琥珀背景及来源链接。</li><li>中断语音/断网，验证恢复与自动保存。</li><li>涉及第三方隐私、逝者声音，验证授权与阻断。</li></ol></article>
+<figure class="card wide"><img src="evidence/screenshots/S05-示例输入待整理.png" alt="页面示例输入已填入但未执行整理"><figcaption>S05 · 已确认输入契约；生成后的输出契约保持未知</figcaption></figure>
+</section>
+</main><footer><p>阶段质量门：显式 Agent 已识别，输入/输出/工具/状态/安全边界与未知项已分离。下一步聚焦“小语”生成单 Agent 功能等价 Prompt。</p></footer>
+</body></html>
