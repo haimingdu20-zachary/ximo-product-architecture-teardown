@@ -1,0 +1,4 @@
+interface:
+  display_name: "产品架构逆向拆解"
+  short_description: "证据驱动拆解 AI 产品，输出五份互链架构 HTML"
+  default_prompt: "使用 $product-architecture-teardown 按四阶段证据门拆解这个已授权产品，并输出用户旅程、Agent 契约、功能等价 Prompt、全景架构和九层可视化图五份离线 HTML。"
